@@ -1,0 +1,25 @@
+/*会社情報*/
+@mixin company {
+  width: 50%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+    font-family: 'Aldrich', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  h2 {
+    font-family: YuMincho, "游明朝", serif;
+    margin-top: 15px;
+    padding: 8px 40px;
+    border: 1px solid #333;
+  }
+}

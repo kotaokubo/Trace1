@@ -1,0 +1,546 @@
+@charset "UTF-8";
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+.hvr-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+  .hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* ヘッダー部分 */
+.head {
+  width: 100%;
+  height: 810px;
+  background-image: url(../images/head.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .head .header {
+    width: 100%;
+    height: 120px;
+    padding: 27px 0;
+    text-align: center;
+    position: absolute; }
+    .head .header .mainLogo {
+      position: relative;
+      display: none; }
+    .head .header .headnav {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      padding-bottom: 25px; }
+      .head .header .headnav .gNav ul {
+        list-style: none;
+        display: inline-block; }
+      .head .header .headnav .gNav li {
+        display: inline-block;
+        line-height: 1.5;
+        padding: 5px 40px; }
+      .head .header .headnav .gNav li:nth-child(2) {
+        margin-right: 200px; }
+      .head .header .headnav .gNav li.nav1, .head .header .headnav .gNav li.nav4 {
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff; }
+      .head .header .headnav .gNav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px; }
+  .head .hdMain {
+    width: 49.5%;
+    position: absolute;
+    top: 30%;
+    left: 9%;
+    /*アスキーアート向け指定*/
+    /* Opera */
+    /* firefox */
+    /* safari */
+    /* IE */ }
+    .head .hdMain .ml5 {
+      position: relative;
+      font-weight: 300;
+      font-size: 4.5em;
+      color: #402d2d; }
+      .head .hdMain .ml5 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+        line-height: 1em; }
+      .head .hdMain .ml5 .line {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        transform-origin: 0.5 0; }
+      .head .hdMain .ml5 .ampersand {
+        font-family: Baskerville, "EB Garamond", serif;
+        font-style: italic;
+        font-weight: 400;
+        width: 1em;
+        margin-right: -0.1em;
+        margin-left: -0.1em; }
+      .head .hdMain .ml5 .letters {
+        display: inline-block;
+        opacity: 0;
+        line-height: 1.1;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif;
+        color: #fff; }
+    .head .hdMain .fadein span {
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.55); }
+    .head .hdMain * {
+      font-size: 18pt;
+      line-height: 27px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0; }
+    .head .hdMain * {
+      font-family: "IPA モナー Pゴシック","IPA mona PGothic","IPA MONAPGOTHIC",IPAMonaPGothic,Mona,"MS PGothic AA","ＭＳ Ｐゴシック","MS Pゴシック","ＭＳＰゴシック","MSPゴシック","MS Pｺﾞｼｯｸ","MS PGothic",sans-serif; }
+    .head .hdMain :-moz-read-only * {
+      font-family: Mona,"MS PGothic AA","ＭＳ Ｐゴシック","MS PGothic","MS Pｺﾞｼｯｸ","MS Pゴシック","ＭＳＰゴシック","MSPゴシック","IPA モナー Pゴシック","IPA mona PGothic","IPA MONAPGOTHIC",IPAMonaPGothic,sans-serif; }
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      .head .hdMain .entry_body dl {
+        font-family: "MS PGothic AA","ＭＳ Ｐゴシック","MS PGothic","MS Pｺﾞｼｯｸ","MS Pゴシック","ＭＳＰゴシック","MSPゴシック",IPAMonaPGothic,"IPA モナー Pゴシック","IPA mona PGothic","IPA MONAPGOTHIC",Mona,sans-serif; } }
+    .head .hdMain .entry_body dl {
+      _font-family: Mona,"IPA モナー Pゴシック","IPA mona PGothic","IPA MONAPGOTHIC",IPAMonaPGothic,"MS PGothic AA","ＭＳ Ｐゴシック","MS Pゴシック","MS PGothic","MS Pｺﾞｼｯｸ","ＭＳＰゴシック","MSPゴシック",sans-serif; }
+    .head .hdMain *:first-child + html .entry_body dl {
+      font-family: Mona,"IPA モナー Pゴシック","IPA mona PGothic","IPA MONAPGOTHIC",IPAMonaPGothic,"MS PGothic AA","ＭＳ Ｐゴシック","MS Pゴシック","MS PGothic","MS Pｺﾞｼｯｸ","ＭＳＰゴシック","MSPゴシック",sans-serif; }
+    .head .hdMain .hdThemaSub h1 {
+      margin: 10px;
+      line-height: 29px;
+      color: #fff;
+      display: inline-block; }
+  .head .hdScroll {
+    position: relative; }
+    .head .hdScroll .scrollBox {
+      position: absolute;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 30px;
+      text-align: center; }
+      .head .hdScroll .scrollBox h1 {
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif; }
+      .head .hdScroll .scrollBox #rect {
+        margin: 10px auto 0;
+        text-align: center;
+        color: #fff; }
+
+/* メイン */
+.main {
+  width: 100%;
+  height: auto;
+  /* ニューストピック*/
+  /*会社情報*/
+  /*会社情報テーマ*/
+  /* 会社情報 */ }
+  .main .news {
+    text-align: center;
+    display: flex; }
+    .main .news dl {
+      width: 100%;
+      padding-top: 15px;
+      border-top: 1px dashed #dddddd; }
+    .main .news dt {
+      width: 169px;
+      float: left;
+      font-size: 14px;
+      padding: 0 0 20px 0;
+      clear: left;
+      text-align: center;
+      font-family: YuMincho, "游明朝", serif; }
+      .main .news dt p {
+        border-left: 1px dashed #dddddd;
+        border-right: 1px dashed #dddddd;
+        border-bottom: 1px dashed #dddddd;
+        padding: 0 0 7px; }
+    .main .news dd {
+      width: 900px;
+      font-size: 14px;
+      padding: 0 20px 20px 0;
+      text-align: left;
+      margin: 0 0 0 169px;
+      font-family: YuMincho, "游明朝", serif; }
+      .main .news dd p {
+        border-bottom: 1px dashed #dddddd;
+        padding: 0 0 7px 20px; }
+    .main .news a {
+      text-decoration: none;
+      color: royalblue; }
+    .main .news .new_inner {
+      margin: 80px auto;
+      width: 1100px; }
+      .main .news .new_inner .News_Topics {
+        font-size: 100%;
+        font-size: 30px;
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif;
+        font-family: 'Knewave', cursive;
+        font-family: 'Squada One', cursive; }
+      .main .news .new_inner .scrollBar {
+        width: 100%;
+        height: 165px;
+        margin: 25px 0 0 0;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        overflow-y: scroll; }
+  .main .CompanyThema {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+    /* ミッション */
+    /*ミッションテーマ*/
+    /* ディビジョン */
+    /* ディビジョンテーマ */
+    /* サービス */
+    /* サービステーマ */
+    /* リクルート */
+    /* リクルートテーマ */ }
+    .main .CompanyThema .scrollfdIn {
+      transition: .8s; }
+      .main .CompanyThema .scrollfdIn h1 {
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif;
+        margin-bottom: 10px; }
+    .main .CompanyThema .mission {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main .CompanyThema .mission h1 {
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif; }
+      .main .CompanyThema .mission a {
+        text-decoration: none;
+        color: #333; }
+      .main .CompanyThema .mission h2 {
+        font-family: YuMincho, "游明朝", serif;
+        margin-top: 15px;
+        padding: 8px 40px;
+        border: 1px solid #333; }
+    .main .CompanyThema .mission_thema {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center center;
+      color: white;
+      background-image: url(../images/DSCcar.jpg); }
+      .main .CompanyThema .mission_thema h1 {
+        font-size: 20px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.55);
+        margin-bottom: 10px;
+        font-family: YuMincho, "游明朝", serif; }
+      .main .CompanyThema .mission_thema h2 {
+        font-size: 20px;
+        padding: 8px;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.55);
+        font-family: YuMincho, "游明朝", serif; }
+      .main .CompanyThema .mission_thema h3 {
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.55);
+        font-family: YuMincho, "游明朝", serif; }
+    .main .CompanyThema .division {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main .CompanyThema .division h1 {
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif; }
+      .main .CompanyThema .division a {
+        text-decoration: none;
+        color: #333; }
+      .main .CompanyThema .division h2 {
+        font-family: YuMincho, "游明朝", serif;
+        margin-top: 15px;
+        padding: 8px 40px;
+        border: 1px solid #333; }
+    .main .CompanyThema .division_thema {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center center;
+      color: white;
+      background-image: url(../images/DSCS.JPG); }
+      .main .CompanyThema .division_thema h1 {
+        font-size: 20px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.55);
+        margin-bottom: 10px;
+        font-family: YuMincho, "游明朝", serif; }
+      .main .CompanyThema .division_thema h2 {
+        font-size: 20px;
+        padding: 8px;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.55);
+        font-family: YuMincho, "游明朝", serif; }
+      .main .CompanyThema .division_thema h3 {
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.55);
+        font-family: YuMincho, "游明朝", serif; }
+    .main .CompanyThema .service {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main .CompanyThema .service h1 {
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif; }
+      .main .CompanyThema .service a {
+        text-decoration: none;
+        color: #333; }
+      .main .CompanyThema .service h2 {
+        font-family: YuMincho, "游明朝", serif;
+        margin-top: 15px;
+        padding: 8px 40px;
+        border: 1px solid #333; }
+    .main .CompanyThema .service_thema {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center center;
+      color: white;
+      background-image: url(../images/DSC.jpg); }
+      .main .CompanyThema .service_thema h1 {
+        font-size: 20px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.55);
+        margin-bottom: 10px;
+        font-family: YuMincho, "游明朝", serif; }
+      .main .CompanyThema .service_thema h2 {
+        font-size: 20px;
+        padding: 8px;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.55);
+        font-family: YuMincho, "游明朝", serif; }
+      .main .CompanyThema .service_thema h3 {
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.55);
+        font-family: YuMincho, "游明朝", serif; }
+    .main .CompanyThema .recruit {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main .CompanyThema .recruit h1 {
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif; }
+      .main .CompanyThema .recruit a {
+        text-decoration: none;
+        color: #333; }
+      .main .CompanyThema .recruit h2 {
+        font-family: YuMincho, "游明朝", serif;
+        margin-top: 15px;
+        padding: 8px 40px;
+        border: 1px solid #333; }
+    .main .CompanyThema .recruit_thema {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center center;
+      color: white;
+      background-image: url(../images/DSCsea.jpg); }
+      .main .CompanyThema .recruit_thema h1 {
+        font-size: 20px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.55);
+        margin-bottom: 10px;
+        font-family: YuMincho, "游明朝", serif; }
+      .main .CompanyThema .recruit_thema h2 {
+        font-size: 20px;
+        padding: 8px;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.55);
+        font-family: YuMincho, "游明朝", serif; }
+      .main .CompanyThema .recruit_thema h3 {
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.55);
+        font-family: YuMincho, "游明朝", serif; }
+
+/* フッター */
+.footer {
+  width: 100%;
+  /* トップスクロール */
+  /*フッターナビ*/
+  /*コピーライト*/ }
+  .footer .topScroll {
+    width: 100%;
+    height: 80px;
+    background-color: #f7f7f7; }
+    .footer .topScroll a {
+      width: 130px;
+      height: 80px;
+      background-color: white;
+      display: block;
+      margin: auto; }
+    .footer .topScroll .my-black {
+      color: #bfbfbf;
+      padding: 8.5px 33px;
+      width: 1em; }
+  .footer .ftr_nav {
+    width: 1200px;
+    padding: 45px 0 50px 0;
+    margin: 0 auto; }
+    .footer .ftr_nav .flL {
+      float: left;
+      /*フッター会社情報リンク*/
+      /*フッターリンク文字*/ }
+      .footer .ftr_nav .flL .ftr_col01 {
+        margin-right: 50px; }
+      .footer .ftr_nav .flL .ftr_col02 {
+        margin-right: 85px; }
+        .footer .ftr_nav .flL .ftr_col02 .Access {
+          font-size: 16px;
+          line-height: 1.4;
+          margin-bottom: 13px; }
+        .footer .ftr_nav .flL .ftr_col02 .AcssInf {
+          family: TBUDMincho M;
+          font-size: 14px;
+          line-height: 2.3; }
+      .footer .ftr_nav .flL .ftr_col03 {
+        family: TBUDMincho M;
+        font-size: 14px;
+        margin-right: 85px; }
+        .footer .ftr_nav .flL .ftr_col03 a {
+          display: block;
+          margin-bottom: 20px;
+          text-decoration: none;
+          color: black; }
+      .footer .ftr_nav .flL .ftr_col04 {
+        family: TBUDMincho M;
+        font-size: 14px;
+        margin-right: 85px; }
+        .footer .ftr_nav .flL .ftr_col04 a {
+          display: block;
+          margin-bottom: 20px;
+          text-decoration: none;
+          color: black; }
+      .footer .ftr_nav .flL .ftr_col05 {
+        family: TBUDMincho M; }
+        .footer .ftr_nav .flL .ftr_col05 a {
+          width: 315px;
+          height: 43px;
+          display: block;
+          margin-bottom: 20px;
+          text-decoration: none;
+          color: white;
+          background-color: #373737;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px; }
+        .footer .ftr_nav .flL .ftr_col05 p {
+          font-size: 14px; }
+  .footer .copyright {
+    font-family: "Satisfy", cursive;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    padding: 25px 0;
+    text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

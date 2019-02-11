@@ -1,0 +1,310 @@
+@charset "UTF-8";
+@import "mixins";
+@import "options";
+@import "hacks";
+
+
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* ヘッダー部分 */
+.head {
+  width: 100%;
+  height: 579px;
+  background-image: url(../images/head.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .header{
+    width: 100%;
+    height: 120px;
+    padding: 27px 0;
+    text-align: center;
+    position: absolute;
+
+    .mainLogo{
+      position: relative;
+    }
+    .headnav{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin:0 auto;
+      padding-bottom: 25px;
+      .gNav {
+        ul {
+          list-style: none;
+          display: inline-block;
+          li {
+          display: inline-block;
+          line-height: 1;
+          padding: 3px 30px;
+          }
+          @import "effects/2d-transitions/wobble-vertical";
+          @if $includeClasses {
+          	.#{$nameSpace}-wobble-vertical {
+          		@include wobble-vertical();
+          	}
+          }
+          li:nth-child(2){
+            margin-right: 200px;
+          }
+          li.nav1,li.nav4{
+            border-right: 1px solid #fff;
+            border-left: 1px solid #fff;
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  .hdMain{
+    width: 49.5%;
+    margin-top: 120px;
+    position: absolute;
+    top: 0;
+    left: 8%;
+
+    .hdThema h1{
+      font-size: 100px;
+      font-weight: bold;
+      font-family: 'Bangers', cursive;
+      font-family: 'Aldrich', sans-serif;
+      color: #fff;
+    }
+    .hdThemaSub h1{
+      margin: 10px;
+      background-color: rgba( 0, 0, 0, 0.55);
+      line-height: 29px;
+      color: #fff;
+      display: inline-block;
+    }
+  }
+
+}
+
+
+/* メイン */
+.main{
+  width: 100%;
+  height: auto;
+
+  /* ニューストピック*/
+  .news {
+    text-align: center;
+    display: flex;
+
+    dl {
+      width: 100%;
+      padding-top:15px;
+      border-top: 1px dashed #dddddd;
+    }
+
+    dt {
+      width: 169px;
+      float: left;
+      font-size: 14px;
+      padding:0 0 20px 0;
+      clear: left;
+      text-align: center;
+      font-family: YuMincho, "游明朝", serif;
+      p {
+        border-left: 1px dashed #dddddd;
+        border-right: 1px dashed #dddddd;
+        border-bottom: 1px dashed #dddddd;
+        padding: 0 0 7px ;
+      }
+    }
+
+    dd {
+      width: 900px;
+      font-size: 14px;
+      padding:0 20px 20px 0;
+      text-align: left;
+      margin:0 0 0 169px;
+      font-family: YuMincho, "游明朝", serif;
+      p {
+        border-bottom: 1px dashed #dddddd;
+        padding: 0 0 7px 20px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: royalblue;
+    }
+
+    .new_inner{
+      margin: 80px auto;
+      width: 1100px;
+      .News_Topics{
+        font-size: 100%;
+        font-size: 30px;
+        font-family: 'Bangers', cursive;
+        font-family: 'Aldrich', sans-serif;
+        font-family: 'Knewave', cursive;
+        font-family: 'Squada One', cursive;
+      }
+      .scrollBar{
+        width: 100%;
+        height: 165px;
+        margin: 25px 0 0 0;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+    }
+  }
+
+  /* 会社情報 */
+  .CompanyThema {
+    $img_path: "../images/";
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+
+    /* ミッション */
+    .mission {
+      @include company;
+    }
+
+    /*ミッションテーマ*/
+    .mission_thema {
+      @include cThema (#{$img_path}DSCcar.jpg);
+    }
+    /* ディビジョン */
+    .division {
+      @include company;
+    }
+
+    /* ディビジョンテーマ */
+    .division_thema {
+      @include cThema (#{$img_path}DSCS.jpg);
+    }
+
+    /* サービス */
+    .service {
+      @include company;
+    }
+
+    /* サービステーマ */
+    .service_thema {
+      @include cThema (#{$img_path}DSC.jpg);
+    }
+
+    /* リクルート */
+    .recruit {
+      @include company;
+    }
+
+    /* リクルートテーマ */
+    .recruit_thema {
+      @include cThema (#{$img_path}DSCsea.jpg);
+    }
+  }
+
+
+/* フッター */
+.footer{
+  width: 100%;
+
+  /* トップスクロール */
+  .topScroll{
+    width: 100%;
+    height: 80px;
+    background-color: #f7f7f7;
+    a{
+      width: 130px;
+      height: 80px;
+      background-color: white;
+      display:  block;
+      margin: auto;
+    }
+      .my-black{
+        color: #bfbfbf;
+        padding: 8.5px 33px;
+        width: 1em;
+      }
+  }
+
+    /*フッターナビ*/
+  .ftr_nav{
+    width: 1200px;
+    padding: 45px 0 50px 0;
+    margin: 0 auto;
+    .flL{
+      float: left;
+      .ftr_col01{
+        margin-right: 50px;
+      }
+      .ftr_col02 {
+        margin-right: 85px;
+        .Access {
+          font-size: 16px;
+          line-height: 1.4;
+          margin-bottom: 13px;
+        }
+        .AcssInf {
+          @include ftrtextLink;
+          line-height: 2.3;
+        }
+      }
+      .ftr_col03{
+        @include ftrtextLink;
+        margin-right: 85px;
+        a{
+          @include ftrcompanyLink;
+        }
+      }
+      .ftr_col04{
+        @include ftrtextLink;
+        margin-right: 85px;
+        a{
+          @include ftrcompanyLink;
+        }
+      }
+      .footer .ftr_col05{
+        family: TBUDMincho M;
+        a{
+          width: 315px;
+          height: 43px;
+          display: block;
+          margin-bottom: 20px;
+          text-decoration: none;
+          color: white;
+          background-color: #373737;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  /*コピーライト*/
+  .copyright{
+    font-family: "Satisfy", cursive;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    padding: 25px 0;
+    text-align: center;
+  }
+}
